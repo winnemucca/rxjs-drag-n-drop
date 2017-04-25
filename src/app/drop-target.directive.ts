@@ -2,7 +2,7 @@ import {Directive, Input, Output, EventEmitter, HostListener} from '@angular/cor
 import { DropTargetOptions } from './draggable-model';
 import { DragNDropService } from './drag-ndrop.service'
 @Directive({
-  selector: '[appDropTarget]'
+  selector: '[myDropTarget]'
 })
 export class DropTargetDirective {
   private options: DropTargetOptions = {};

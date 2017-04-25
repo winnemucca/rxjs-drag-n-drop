@@ -1,3 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<h1>Option that would include using html drag and drop</h1>
+<div>
+  <div [myDraggable]="{data: 'Draggable 1'}">Drag me</div>
+  <div [myDraggable]="{data: 'Draggable 2'}">Drag me</div>
+  <div myDropTarget (myDrop)="onDrop($event)">Drop here</div>
+  <div [myDropTarget]="{zone:'another'}">Drop here</div>
+</div>
+
+
+<h1>Dracula Option</h1>
+
+
+
+<h1>Rxjs Option</h1>

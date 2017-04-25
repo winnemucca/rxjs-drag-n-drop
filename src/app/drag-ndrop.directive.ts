@@ -3,13 +3,12 @@ import { IDraggableOptions } from './draggable-model';
 // providers
 import { DragNDropService } from './drag-ndrop.service';
 @Directive({
-  selector: '[appDragNDrop]'
+  selector: '[myDraggable]'
 })
 export class DragNDropDirective {
 
   private options: IDraggableOptions = {};
   constructor(private dragService: DragNDropService) {
-
   }
 
   @HostBinding('draggable')
