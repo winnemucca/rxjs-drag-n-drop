@@ -10,6 +10,7 @@ import { DragNDropDirective } from './drag-ndrop.directive';
 
 import { DragNDropService } from './drag-ndrop.service';
 import { DropTargetDirective } from './drop-target.directive';
+import {DragulaModule} from "ng2-dragula";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DropTargetDirective } from './drop-target.directive';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    DragulaModule
   ],
   providers: [
     DragNDropService

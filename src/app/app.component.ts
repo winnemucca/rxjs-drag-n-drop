@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { DragulaDirective, DragulaService } from 'ng2-dragula/ng2-dragula';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
