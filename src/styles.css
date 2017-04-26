@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+.wrapper {
+  display: table;
+}
 .parent {
   background-color: rgba(255, 255, 255, 0.2);
   margin: 50px 0;
