@@ -19,6 +19,10 @@
 
 }
 
+.container .ex-moved {
+  background-color: #00ffff;
+}
+
 
 .container div,
 .gu-mirror {
