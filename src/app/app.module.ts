@@ -11,12 +11,14 @@ import { DragNDropDirective } from './drag-ndrop.directive';
 import { DragNDropService } from './drag-ndrop.service';
 import { DropTargetDirective } from './drop-target.directive';
 import {DragulaModule} from "ng2-dragula";
+import { RxDirectiveDirective } from './rx-directive.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     DragNDropDirective,
-    DropTargetDirective
+    DropTargetDirective,
+    RxDirectiveDirective
   ],
   imports: [
     BrowserModule,

@@ -50,10 +50,9 @@ export class AppComponent implements OnInit{
     this.removeClass(e, 'ex-moved');
   }
 
-  private onDrop(args) {  //dragula
-    console.log('args', args);
+  private onDrop(args) {
     let [e, el] = args;
-    this.removeClass(e, 'ex-moved');
+    this.addClass(e, 'ex-moved');
   }
 
   private onOver(args) {
