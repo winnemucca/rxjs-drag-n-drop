@@ -2,7 +2,7 @@
 <div>
   <div [myDraggable]="{data: 'Draggable 1'}">Drag me</div>
   <div [myDraggable]="{data: 'Draggable 2'}">Drag me</div>
-  <div myDropTarget (myDrop)="onDrop($event)">Drop here</div>
+  <div myDropTarget (myDrop)="onDrop2($event)">Drop here</div>
   <div [myDropTarget]="{zone:'another'}">Drop here</div>
 </div>
 
@@ -12,14 +12,17 @@
 <div class="examples">
   <div class="parent">
     <div class="wrapper">
-      <div class="container">
+      <div class="container" [dragula]="'first-bag'">
+        <!--<div [dragula]="'bag-one'">moving 1</div>-->
+        <!--<div [dragula]="'bag-one'">moving 2</div>-->
+        <!--<div [dragula]="'bag-two'">moving 3</div>-->
         <div>moving 1</div>
         <div>moving 2</div>
         <div>moving 3</div>
       </div>
 
-      <div class="container">
-        <div [dragula]="'first-bag'">moving 1B</div>
+      <div class="container" [dragula]="'first-bag'">
+        <div>moving 1B</div>
         <div>moving 2B</div>
         <div>moving 3B</div>
       </div>

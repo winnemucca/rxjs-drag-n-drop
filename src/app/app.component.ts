@@ -9,6 +9,7 @@ export class AppComponent implements OnInit{
 
   constructor(private dragService: DragulaService) {
     dragService.drop.subscribe((value) => {
+      console.log(value);
       this.onDrop(value.slice(1));
     });
   }
@@ -20,9 +21,15 @@ export class AppComponent implements OnInit{
     console.log('want dragula to initiate here')
   }
 
-  onDrop(data: any) {
+  private onDrop(args) {  //dragula
+    console.log('args', args);
+  }
+
+  onDrop2(data: any) { // html drag and drop
     console.log('droped', data);
   }
+
+
 
 
 }
